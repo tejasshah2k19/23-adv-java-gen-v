@@ -1,0 +1,31 @@
+what is servlet? 
+	servlet is java class , which extends HttpServlet
+	
+why we create servlet? 
+	accept user's request , process, give response 
+		 
+how to create servlet? 
+1) class extends HttpServlet 
+2) service() : override
+	public void service(HttpServletRequest request,HttpServletResponse response) 
+3) map your servlet with url pattern using -> @WebServlet()
+
+
+
+how to link servlet-api.jar in web project ? 
+
+project->right click -> properties -> java build path -> 
+libraries -> add external jar -> browse path -> tomcat ->
+lib->servlet-api.jar -> open -> order and export -> select all ->
+apply and close 
+
+
+
+
+how to read form data in servlet? 
+String firstName = request.getParameter("firstName");
+ 
+
+
+
+
