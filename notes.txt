@@ -26,6 +26,43 @@ how to read form data in servlet?
 String firstName = request.getParameter("firstName");
  
 
+-------------------------------------------
+
+InputNum.html
+			No.1 [   ]
+			No.2 [   ] 
+					[submit]
+					
+submit -> request{no1,no2} -> server  
+						-> read , next page display 
+						-> addition print 
+						-> validation 
+						
+--------------------------------------------------
+					
+
+Integer.parseInt() vs XXX ? 
+which is good ? 
+
+-----------------------------------------------
+JSP -> java server pages / java servlet pages -> 
+		dynamic 
+				HTML + java
+				 
+		.jsp ->java -> 		HTML + java
+		
+		by default -> html
+		
+		1) scriptlet  <% %> 
+		2) expression <%= %>
+		3) declaration <%! %>*
+---------------------------------------------		
+
+
+
+
+
+
 
 
 
