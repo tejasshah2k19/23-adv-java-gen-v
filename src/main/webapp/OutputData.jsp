@@ -6,7 +6,18 @@
 </head>
 <body>
 
+
 	<h2>OutputData</h2>
+
+	<%
+		String firstName = (String)request.getAttribute("fn");
+		String dob = (String)request.getAttribute("db");
+		String gender = (String) request.getAttribute("gn");
+	%>
+	
+	FirstName : <%=firstName %><br> 
+	DoB : <%=dob %><br>
+	Gender : <%=gender %><br>
 
 </body>
 </html>

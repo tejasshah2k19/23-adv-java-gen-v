@@ -60,6 +60,29 @@ JSP -> java server pages / java servlet pages ->
 
 
 
+java logic -> <% %> 
+print      -> <%= %> 
+
+MVC -> 
+
+
+servlet --> jsp --> request -> set 
+				jsp-> get 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

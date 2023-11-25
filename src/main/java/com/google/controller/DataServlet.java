@@ -17,6 +17,18 @@ public class DataServlet extends HttpServlet {
 		String dob = request.getParameter("dob");
 		String gender = request.getParameter("gender");
 
+		
+		System.out.println(firstName);
+		System.out.println(dob);
+		System.out.println(gender);
+		
+		
+		//set data for next jsp -> OutputData.jsp 
+		request.setAttribute("fn",firstName);//fn->firstName
+		request.setAttribute("db",dob);
+		request.setAttribute("gn",gender);
+		
+		
 		// goto OutputData.jsp
 		// how to navigate from servlet to jsp?
 		RequestDispatcher rd = request.getRequestDispatcher("OutputData.jsp");// where ?
