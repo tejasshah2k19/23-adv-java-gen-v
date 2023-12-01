@@ -70,11 +70,30 @@ servlet --> jsp --> request -> set
 				jsp-> get 
 
 
+----------------------------------
 
 
+Servlet -> jsp -> ? 
+	RequestDispatcher 
+		forward()
+		
+servlet -> data -> jsp ? 
+	request.setAttribute("key",value); 		
 
-
-
+jsp -> get {servlet}
+	value = request.getAttribute("key");			
+----------------------------------		
+		
+		
+		${firstNameError}
+		
+		${ } -> EL -> expression language 
+		
+		JSP 
+			
+		print
+		
+		${jack} 	
 
 
 
