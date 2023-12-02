@@ -18,16 +18,25 @@ public class RegistrationServlet extends HttpServlet{
 		String firstName = request.getParameter("firstName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+		String gender = request.getParameter("gender");
+		String city = request.getParameter("city");
+		String aboutme = request.getParameter("aboutme");
+		
 		
 		boolean isError = false; //no error
+		
 		if(firstName == null || firstName.trim().length() == 0 ) {
 			isError = true; 
 			request.setAttribute("firstNameError","Please Enter FirstName");
+		}else {
+			request.setAttribute("firstNameValue",firstName);
 		}
 
 		if(email == null || email.trim().length() == 0) {
 			isError = true; 
 			request.setAttribute("emailError","Please Enter Email");
+		}else {
+			request.setAttribute("emailValue",email);
 		}
 		
 		if(password == null || password.trim().length() == 0) {
@@ -35,6 +44,26 @@ public class RegistrationServlet extends HttpServlet{
 			request.setAttribute("passwordError","Please Enter Password");
 		}
 		
+		if(gender == null) {
+			isError = true; 
+			request.setAttribute("genderError","Please Selecte Gender");
+		}else {
+			request.setAttribute("genderValue",gender);
+		}
+		
+		if(city == null || city.equals("-1")) {
+			isError = true; 
+			request.setAttribute("cityError","Please Select City");
+		}else {
+			request.setAttribute("cityValue",city);
+		}
+		
+		if(aboutme == null || aboutme.trim().length() ==0) {
+			isError = true; 
+			request.setAttribute("aboutmeError","Please Enter Aboutme");
+		}else {
+			request.setAttribute("aboutmeValue",aboutme);
+		}
 		
 		RequestDispatcher rd = null;
 		if(isError == true ) {
