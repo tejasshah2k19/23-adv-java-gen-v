@@ -96,10 +96,26 @@ jsp -> get {servlet}
 		${jack} 	
 --------------------------------------
 
+//min -> 1 , max -> n 
+		//min -> 0 , max -> n 
+		//firstName ram1 ->
+		//regex 
+		//matches -> true / false 
+		//format a-zA-Z , data => accepted ? 
+		
 
+firstName = jack123
+regEx  -> format  { matches() }  true / false  
 
+strength -> 
+			1) length >= 8 
+			2) 1 digit 
+			3) 1 upper 
+			4) 1 lower 
+			5) 1 special 	
 
-
+1) radio 
+2) validation - regEx - password 
 
 
 

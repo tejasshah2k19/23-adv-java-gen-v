@@ -22,13 +22,22 @@ public class RegistrationServlet extends HttpServlet{
 		String city = request.getParameter("city");
 		String aboutme = request.getParameter("aboutme");
 		
+		 
+		String alphaRegEx = "[a-zA-Z]+";//a to z A to Z 
 		
+		String emailRegEx = "[a-zA-Z]+@[a-zA-Z]+\\.[a-ZA-Z]{2,5}"; //XXX@XX.XX
 		boolean isError = false; //no error
 		
 		if(firstName == null || firstName.trim().length() == 0 ) {
 			isError = true; 
 			request.setAttribute("firstNameError","Please Enter FirstName");
-		}else {
+		}else if(firstName.matches(alphaRegEx) == false) {
+			isError =true; 
+			request.setAttribute("firstNameError","Please Enter Valid FirstName");
+			request.setAttribute("firstNameValue",firstName);
+		
+		}
+		else {
 			request.setAttribute("firstNameValue",firstName);
 		}
 
