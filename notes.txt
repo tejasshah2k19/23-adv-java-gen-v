@@ -117,12 +117,40 @@ strength ->
 1) radio 
 2) validation - regEx - password 
 
+----------------------------------------------------------
+
+filter -> 
+
+	pre process
+	
+	
+	ICICI ->  Login -> request ? 
+					india 
+					usa 
+					
+					
+	whatsApp ->  Mr x 25 MB -> image ---> Mr Y 
+	  
+	
+	X->25MB->WhatsAppServer->25MB->Y
+	 
+	X->25MB->compression15MB->WSERVER15MB->Y15MB 
+
+------------------------------------------------------------
 
 
+.jsp -> request --> server ---> filter | servlet
 
 
+Name.jsp --> server --> filter {validation ->servlet,back }|servlet --> name read
+										 -> upper case convert and print 
+ 	
+-----------------------------------------------------------
+steps to create filter:- 
 
-
+1) class implements Filter  
+2) init() doFilter()** destroy() 
+3) @WebFilter 
 
 
 
