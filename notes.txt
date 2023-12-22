@@ -152,15 +152,44 @@ steps to create filter:-
 2) init() doFilter()** destroy() 
 3) @WebFilter 
 
+-----------------------------------------------------------
+life cycle -> 
+	servlet life cycle -> 
+	
 
+init()	 
+service()
+destroy()  
+ 
+Signup.jsp -> action='SignupServlet' data -> submit -> SignupServlet
 
+servlet container -- server -- tomcat -> memory -> SignupSerlvet
 
+1) load class
+2) create instance  
+3) init()  { 1 time } 
+4) service(){logic} 
+5) destroy()***{shutdown server}  
+ 
 
+second time -> load class ? create instance? init()? 
+			service() 
 
+third time -> 
+			service() 
 
-
-
-
+n time ->  thread 
+	1st time init() 
+	 all the time service() 
+	shutdown -> destroy() 
+	
+	
+init() - 1 time 
+destroy() - 1 time 
+service() - n time 	
+	
+	
+	
 
 
 
