@@ -188,12 +188,47 @@ init() - 1 time
 destroy() - 1 time 
 service() - n time 	
 	
-	
-	
+--------------------------------------------------------------
+
+ input --> process --> output 
+ request -> server -> response 
+ .jsp -> request -> server -> servlet -> process -> response -> .jsp
+ 
+ 
+ 
+ Signup.jsp -> firstName email password [ submit ] 
+ 			server -->
+ 				SignupServlet -->
+ 						read data 
+ 						validation { required , regEx }
+						save data into database { store data in db } 
+ 						response ---> {error , success } 
+ 						
 
 
+------------------------------------------------------------------
 
 
+	db connection -- sQL -> mysql | pg | oracle |  -> jar -> driver  
+		
+		1) download jar -- driver -- connector -- mysqlconnector.jar 
+				zip -> extract -> mysql-connector.jar 
+					webapp -> WEB-INF -> lib -> paste 
+
+		2) link - project ->
+		
+		project -> right click -> properties -> java build path -> 
+		click on libraries tab -> add jar-> browse -> 
+		->project/webapp/web-inf/lib/mysql-connector.jar -> open/ok -> 
+		click on order and export tab -> select all -> apply and close 
+		
+		3) code 
+				db connection 
+				
+		4) create database 
+			start press => mysql commandline client -> open -> prompt password -> root -> enter 
+			
+			create database 23advgenh; 
 
 
 
