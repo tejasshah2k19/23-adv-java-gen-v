@@ -1,0 +1,46 @@
+mysql install 
+
+command line - cui - command  
+workb - gui
+
+
+
+mysql -> open 
+
+*list all databases - mysql server 
+show databases; 
+
+*how to create database 
+     create database advjava23; 
+
+*select your database 
+	use advjava23; 
+
+*table {row*col}
+	create table users (
+		userId integer primary key auto_increment ,
+		firstName varchar(30) not null,
+		email varchar(30),
+		password varchar(30)
+	); 
+
+* list all tables from db 
+	show tables; 
+
+* records - table 
+	select * from users;
+
+* add record in users table 
+	insert into users
+ 		(firstName,email,password) 
+		values ('jack','jack@gmail.com','jack123123' );
+
+	insert into users
+ 		(firstName,email,password) 
+		values ('rock','rock@gmail.com','rock123123' );   
+
+* save 
+	commit 
+
+
+
