@@ -43,4 +43,8 @@ show databases;
 	commit 
 
 
+* remove user who's userId is 3 
+	delete from users where userId = 3 ; 
+	
+
 

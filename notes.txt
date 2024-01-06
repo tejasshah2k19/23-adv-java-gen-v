@@ -233,7 +233,10 @@ service() - n time
 
 
 
-
+Connection => database connection -> hold 
+PreparedStatement => database query execute => 
+	executeUpdate() : insert , update , delete 
+	executeQuery()  : select query 
 
 
 
