@@ -46,5 +46,39 @@ show databases;
 * remove user who's userId is 3 
 	delete from users where userId = 3 ; 
 	
+--------------------------------------
+
+create table products (
+	productId integer primary key auto_increment,
+	name varchar(30),
+	price integer, 
+	category varchar(30),
+	qty integer
+);
+
+show tables;
+
+
+desc products;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

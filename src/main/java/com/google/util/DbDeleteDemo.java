@@ -32,6 +32,7 @@ public class DbDeleteDemo {
 			//run query 
 			pstmt.executeUpdate();
 			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
