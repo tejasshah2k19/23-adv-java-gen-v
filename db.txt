@@ -61,8 +61,13 @@ show tables;
 
 desc products;
 
+-----------------------------------------
 
+delete from products where productId = 3 
 
+delete from products where productId = 4 
+ 
+------------------------------------------
 
 
 

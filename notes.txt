@@ -239,6 +239,25 @@ PreparedStatement => database query execute =>
 	executeQuery()  : select query 
 
 
+------------------------------------------------------------------------
+
+
+select * from products; 
+
+servlet -> db connection -> query 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
