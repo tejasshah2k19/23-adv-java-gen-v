@@ -29,7 +29,13 @@
 		<td><%=productId %></td>
 			<td><%=name%></td>
 			<td><%=price%></td>
-			<td><a href="DeleteProductServlet?productId=<%=productId%>">Delete</a></td>
+			<td>
+			
+				<a href="DeleteProductServlet?productId=<%=productId%>">Delete</a>
+				<a href="ViewProductServlet?productId=<%=productId%>">View</a>
+			
+			
+			</td>
 		</tr>
 		<%
 		}

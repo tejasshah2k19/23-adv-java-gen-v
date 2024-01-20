@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ViewProductServlet</display-name>
+    <servlet-name>ViewProductServlet</servlet-name>
+    <servlet-class>com.google.controller.ViewProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewProductServlet</servlet-name>
+    <url-pattern>/ViewProductServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

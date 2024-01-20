@@ -70,7 +70,9 @@ delete from products where productId = 4
 ------------------------------------------
 
 
-
+how to retrive particular product information from database ? 
+	select * from products where productId = 1 ; 
+	
 
 
 
