@@ -247,6 +247,42 @@ select * from products;
 servlet -> db connection -> query 
 
 
+----------------------------------------------------
+
+headers
+
+	request headers -> 
+	
+	user -> server -> request 
+	
+	
+	Signup -> input -> submit -> server ->SignupServlet{form data}
+				hidden information --> server -> request headers ->  
+				
+				
+	server -> lang 
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

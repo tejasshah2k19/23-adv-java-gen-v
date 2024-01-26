@@ -19,4 +19,14 @@
     <servlet-name>ViewProductServlet</servlet-name>
     <url-pattern>/ViewProductServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestHeaderServlet</display-name>
+    <servlet-name>RequestHeaderServlet</servlet-name>
+    <servlet-class>com.google.controller.RequestHeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestHeaderServlet</servlet-name>
+    <url-pattern>/RequestHeaderServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
