@@ -15,6 +15,9 @@
 	<input type="submit" value="Add Cookie"/> 
 
 </form>
+<br><br>
+
+<a href="PrintAllCookie.jsp">All Cookie</a>
 
 </body>
 </html>
