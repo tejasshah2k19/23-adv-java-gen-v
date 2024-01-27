@@ -29,4 +29,14 @@
     <servlet-name>RequestHeaderServlet</servlet-name>
     <url-pattern>/RequestHeaderServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InputCookieServlet</display-name>
+    <servlet-name>InputCookieServlet</servlet-name>
+    <servlet-class>com.google.controller.InputCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InputCookieServlet</servlet-name>
+    <url-pattern>/InputCookieServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

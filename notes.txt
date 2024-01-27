@@ -263,13 +263,49 @@ headers
 	server -> lang 
 	
 	
+------------------------------------------------------------------------
+
+session and cookie 
+
+
+facebook.com -> login -> Home -> 
+		post like 
+		new post 
+		profile update 
+		
+		how facebook knows ? 
+		
+	X			Y			Z
+	Home		Home		Home 
+	 post like 				profile update 
+			    new post 	
+			    
+			    
+			    
+			    
+			    SERVER -> 3 request -> 
 
 
 
+Login -> Welcome , X
+
+	user's information ?  
+			1) session  --> server side -> most secure 
+			2) cookie   --> client side : {browser} 
+			
+			
+			
+	user -> server -> request --> XXX | session --> response -> id
+	
+	www.mysite.com -> request -> page | sessionId  		
 
 
 
+-----------------------------------------------------------------------
 
+	session will create by server  -> use 
+	
+	cookie will created by developer -> client's browser -> set  
 
 
 
