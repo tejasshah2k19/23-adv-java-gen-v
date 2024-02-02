@@ -39,4 +39,14 @@
     <servlet-name>InputCookieServlet</servlet-name>
     <url-pattern>/InputCookieServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CLoginServlet</display-name>
+    <servlet-name>CLoginServlet</servlet-name>
+    <servlet-class>com.google.controller.CLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CLoginServlet</servlet-name>
+    <url-pattern>/CLoginServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

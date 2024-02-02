@@ -308,6 +308,75 @@ Login -> Welcome , X
 	cookie will created by developer -> client's browser -> set  
 
 
+----------------------------------------------------------
+
+Cookie d = new Cookie("country","USA");
+response.addCookie(d); 
+
+
+Cookie c[] = request.getCookies();
+
+
+
+
+
+Cookie -> LoggedIn Yes or No 
+
+abc.com -> 
+
+	abc.com -> already logged in ? Yes -> Home 
+							       No  -> Login 
+							       
+
+	Login.jsp ->
+			email
+			password 
+			
+	LoginServlet -> 
+			email XX 
+			password XX
+				
+			logged In 
+			
+			cookie -> login : yes 
+				
+			
+				
+
+
+2 fruit -> 
+
+		X -> stamp ->
+		
+		
+		
+		
+Login.jsp 
+		email 
+		password 
+		
+AuthenticateServlet -> email and password - >true -> stamp -> cookie 
+
+
+abc.com -> stamp ? -> Home.jsp 
+				X -> Login.jsp 
+				   				
+-------------------------------------------------------------------
+
+CLogin.jsp -> email ,password -> submit ->  True Home | False CLogin.jsp 
+ 
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +9,14 @@
 <body>
 
 	<%
-	
-		Cookie c[] = request.getCookies();
-	
-		for(Cookie x:c){
-			out.print(x.getName()+"::"+x.getValue()+"<bR><br>");
-		}
+	Cookie c[] = request.getCookies();
+
+	for (Cookie x : c) {
+		out.print(x.getName() + "::" + x.getValue() + "<bR><br>");
+	}
 	%>
-	<br><br>
+	<br>
+	<br>
 	<a href="InputCookieData.jsp">Add New Cookie</a>
 
 
