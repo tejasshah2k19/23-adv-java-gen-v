@@ -8,13 +8,13 @@
 </head>
 <body>
 	<%
-	Cookie c[] = request.getCookies();
+	Cookie c[] = request.getCookies();//get all cookies from client's browser 
 
 	if (c != null)
 		for (Cookie x : c) {
 			if (x.getName().equals("login")) {
-		//already loggedin 
-		response.sendRedirect("CHome.jsp");
+				//already loggedin 
+				response.sendRedirect("CHome.jsp");
 			}
 		}
 	%>

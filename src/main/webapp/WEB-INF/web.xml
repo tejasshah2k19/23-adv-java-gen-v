@@ -49,4 +49,14 @@
     <servlet-name>CLoginServlet</servlet-name>
     <url-pattern>/CLoginServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CLogoutServlet</display-name>
+    <servlet-name>CLogoutServlet</servlet-name>
+    <servlet-class>com.google.controller.CLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CLogoutServlet</servlet-name>
+    <url-pattern>/CLogoutServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

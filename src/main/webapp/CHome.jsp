@@ -10,5 +10,6 @@
 
 <h2>Welcome</h2>
 
+<a href="CLogoutServlet">Logout</a>
 </body>
 </html>
