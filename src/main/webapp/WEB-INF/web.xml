@@ -59,4 +59,14 @@
     <servlet-name>CLogoutServlet</servlet-name>
     <url-pattern>/CLogoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecretCodeServlet</display-name>
+    <servlet-name>SecretCodeServlet</servlet-name>
+    <servlet-class>com.google.controller.SecretCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecretCodeServlet</servlet-name>
+    <url-pattern>/SecretCodeServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

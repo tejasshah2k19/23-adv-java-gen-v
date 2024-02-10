@@ -367,6 +367,23 @@ CLogin.jsp -> email ,password -> submit ->  True Home | False CLogin.jsp
  
 -------------------------------------------------------------------
 
+user info -> cookie , session 
+
+login -> cookie 
+
+
+cookie ->   information 
+session ->  information -> 
+
+session -> create -> server 
+           memory -> server 
+		   	
+
+
+cookie -> create -> developer 
+		  memory -> client's browser 
+		  expiredTime -> 1 year -> default 
+		  setMaxAge()  
 
 
 
@@ -374,6 +391,15 @@ CLogin.jsp -> email ,password -> submit ->  True Home | False CLogin.jsp
 
 
 
+secretCode -> session store 
+
+
+1) Mr  A 
+2) Mr  B
+3) Mr  C 
+
+
+ 
 
 
 
