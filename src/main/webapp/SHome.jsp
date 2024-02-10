@@ -12,5 +12,8 @@ Secret Code Added into Session
 <br><Br>
 
 <a href="ShowCode.jsp">Show Code</a>
+<br><Br>
+
+<a href="SLogoutServlet">Logout</a>
 </body>
 </html>

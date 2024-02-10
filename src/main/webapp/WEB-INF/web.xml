@@ -69,4 +69,19 @@
     <servlet-name>SecretCodeServlet</servlet-name>
     <url-pattern>/SecretCodeServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SLogoutServlet</display-name>
+    <servlet-name>SLogoutServlet</servlet-name>
+    <servlet-class>com.google.controller.SLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SLogoutServlet</servlet-name>
+    <url-pattern>/SLogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  	<session-timeout>5</session-timeout>
+  </session-config>
+  
 </web-app>
