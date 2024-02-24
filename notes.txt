@@ -398,15 +398,44 @@ secretCode -> session store
 2) Mr  B
 3) Mr  C 
 
+-----------------------------------------------------------------------------------------
 
+listener ->
  
+ 	server start -> mail 
+ 	server stop  -> mail 
+ 	
+ 	server start -> NSE open 
+ 	server stop  -> NSE close 
+ 	
+ 	session create  -> userCounter++ 
+ 	session destroy -> userCounter-- 
+ 	
+ 	
+ 	request->setAttribute -> 
 
 
 
 
+Page -> UserStats.jsp 
+		
+			Total Online user : 12 
+			
+
+	userCounter = 0 
+	
+	session created -> userCounter++ 
+	session destroy -> userCounter-- 
+	 
+
+session event-> 
 
 
+how to create listener ? 
 
+1) class implements ListenerXXX 
+2) override method and write logic 
+3) @WebListener 
 
 
 
