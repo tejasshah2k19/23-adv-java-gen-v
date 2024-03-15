@@ -438,6 +438,133 @@ how to create listener ?
 3) @WebListener 
 
 
+--------------------------------------------------------------------------------------------
+
+
+
+MAVEN Tool 
+
+ 
+dependency --- library --- jar 
+
+Scanner
+Date
+File
+
+
+
+JAVA -> DB -> MYSQL -> 
+				lib 
+					mysql-connector.jar 
+					
+
+PayPal -> payment 
+				class -> jar -> 
+				
+				lib -> 
+					paypal.jar 3.2 
+						json.jar 2.2 
+							gson.jar 3.6 
+
+			?
+			documentation 
+			github 
+			
+			??
+			virus / cor / 
+			
+			
+
+maven -> remote repo -> 
+				jar version sub dep
+				
+				ask -> paypal 3.2 ->
+						json.jar 2.2 ->
+							gson.jar 3.6 -> 
+							
+maven project-> pom.xml
+ 	entry  
+				
+file -> new -> maven project -> 
+
+-----------------------------------------------------------------------------------------
+HTML TAG 
+<b> 
+<i>
+<s>
+
+
+JAVA -> TAG 
+	JSTL -> Java Standard Tag Library 
+	
+	coreTag 
+		<if>
+		<forEach>
+		<set>
+		<out>
+		<remove>
+		<catch>
+	 
+
+
+jstl.jar 
+
+
+1) jstl.jar {pom.xml}
+2) import -> jsp 
+3) use yout tag using c:  <c:> 
+
+
+---------------------------------
+jstl 
+	
+topic: 
+	inclusion 
+	directives 
+	page attribute 
+	MVC CRUD 
+	
+-----------------------------------------------------
+
+	inclusion 
+
+		Header 
+		Footer 
+
+	include a jsp inside a jsp 
+	
+	1) static inclusion    <%@ include file="Header.jsp" %> 
+	2) dynamic inclusion  <jsp:include page="Header.jsp"/> 
+
+	
+
+	static inclusion :- 
+		AListProduct.jsp contains 5 line of code 
+			and we include Header.jsp which contains 5 line of code 
+		AListProduct.jsp => total 10 line of code 		
+		in static inclusion code will be copy from included jsp{ Header.jsp}  to main jsp{AListProduct.jsp} 
+		
+		
+	dynamic inclusion :- 
+			no line of code will copy 
+			you will redirect to included jsp and you will get output/response 
+			AListProduct.jsp -> Header.jsp >
+			
+				header output 
+				listproduct output 														
+
+
+	if you want to reuse the variable of include jsp than you can go with 
+	static inclusion , 
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
